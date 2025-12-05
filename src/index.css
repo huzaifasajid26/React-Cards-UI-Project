@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+}
+
+.parent {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  height: 350px;
+  width: 290px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.top img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  padding: 7px;
+}
+
+.top button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: #b1b1b1;
+  color: white;
+  cursor: pointer;
+}
+
+.center h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.center h2 {
+  font-size: 20px;
+  ;
+}
+
+.center h3 span {
+  font-size: 9.5px;
+  font-weight: 400;
+  color: #636262;
+}
+
+.center .tag {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.center .tag h4 {
+  font-size: 13px;
+  background-color: #dadada;
+  color: #111;
+  padding: 3px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #b1b1b1;
+  padding-top: 15px;
+}
+
+.bottom button {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottom h3 {
+  font-size: 17px;
+}
+
+.bottom p {
+  font-size: 10px;
+  color: #636262;
+}
