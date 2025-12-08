@@ -3,8 +3,7 @@ import Card from "./Card";
 const App = () => {
   const jobOpenings = [
     {
-      brandLogo:
-        "./../public/google.png",
+      brandLogo: "/google.png",
       company: "Google",
       datePosted: "5 days ago",
       post: "Frontend Engineer",
@@ -14,8 +13,7 @@ const App = () => {
       location: "Mountain View, USA",
     },
     {
-      brandLogo:
-        "./../public/amazon.jpg",
+      brandLogo: "/amazon.jpg",
       company: "Amazon",
       datePosted: "10 days ago",
       post: "Senior UI/UX Designer",
@@ -25,8 +23,7 @@ const App = () => {
       location: "Karachi, Pakistan",
     },
     {
-      brandLogo:
-        "./../public/meta.png",
+      brandLogo: "/meta.png",
       company: "Meta",
       datePosted: "2 weeks ago",
       post: "Backend Developer",
@@ -36,8 +33,7 @@ const App = () => {
       location: "London, UK",
     },
     {
-      brandLogo:
-        "./../public/apple.png",
+      brandLogo: "/apple.png",
       company: "Apple",
       datePosted: "3 days ago",
       post: "iOS Developer",
@@ -47,8 +43,7 @@ const App = () => {
       location: "Cupertino, USA",
     },
     {
-      brandLogo:
-        "./../public/netflex.png",
+      brandLogo: "/netflex.png",
       company: "Netflix",
       datePosted: "4 weeks ago",
       post: "Product Designer",
@@ -58,8 +53,7 @@ const App = () => {
       location: "Remote",
     },
     {
-      brandLogo:
-        "./../public/microsoft.png",
+      brandLogo: "/microsoft.png",
       company: "Microsoft",
       datePosted: "6 days ago",
       post: "Cloud Engineer",
@@ -69,8 +63,7 @@ const App = () => {
       location: "Hyderabad, India",
     },
     {
-      brandLogo:
-        "./../public/open AI.png",
+      brandLogo: "/open AI.png",
       company: "OpenAI",
       datePosted: "1 week ago",
       post: "AI Research Assistant",
@@ -80,8 +73,7 @@ const App = () => {
       location: "San Francisco, USA",
     },
     {
-      brandLogo:
-        "./../public/tesla.png",
+      brandLogo: "/tesla.png",
       company: "Tesla",
       datePosted: "3 weeks ago",
       post: "Software Engineer",
@@ -91,8 +83,7 @@ const App = () => {
       location: "Austin, USA",
     },
     {
-      brandLogo:
-        "./../public/ibm.png",
+      brandLogo: "/ibm.png",
       company: "IBM",
       datePosted: "8 days ago",
       post: "Data Analyst",
@@ -102,8 +93,7 @@ const App = () => {
       location: "Toronto, Canada",
     },
     {
-      brandLogo:
-        "./../public/samsung.png",
+      brandLogo: "/samsung.png",
       company: "Samsung",
       datePosted: "2 days ago",
       post: "Full Stack Developer",
@@ -116,24 +106,24 @@ const App = () => {
 
   return (
     <div className="parent">
-      {jobOpenings.map(function (elem) {
+      {jobOpenings.map(function (elem, idx) {
         return (
-          <Card
-            brandLogo={elem.brandLogo}
-            company={elem.company}
-            datePosted={elem.datePosted}
-            post={elem.post}
-            tag1={elem.tag1}
-            tag2={elem.tag2}
-            pay={elem.pay}
-            location={elem.location}
-          />
+          <div key={idx}>
+            <Card
+              brandLogo={elem.brandLogo}
+              company={elem.company}
+              datePosted={elem.datePosted}
+              post={elem.post}
+              tag1={elem.tag1}
+              tag2={elem.tag2}
+              pay={elem.pay}
+              location={elem.location}
+            />
+          </div>
         );
       })}
     </div>
   );
 };
-
-// 1:59:00
 
 export default App;
